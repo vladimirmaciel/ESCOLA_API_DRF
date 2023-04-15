@@ -1,4 +1,4 @@
-# Formação Django Rest Framewor - Alura
+# Formação Django Rest Framework - Alura
 
 ### Instalação do projeto: 
 
