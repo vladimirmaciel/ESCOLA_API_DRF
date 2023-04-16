@@ -1,6 +1,7 @@
 # from django.shortcuts import render
 from rest_framework import viewsets
-from serializer import AlunoSerializer, CursoSerializer
+
+from escola.serializer import AlunoSerializer, CursoSerializer
 
 from .models import Aluno, Curso
 
