@@ -1,6 +1,11 @@
 {
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter"
+  "python.linting.pylintEnabled": false,
+  "python.linting.enabled": true,
+  "files.exclude": {
+      "**/*.pyc": { "when": "$(basename).py" },
+      "**/__pycache__": true,
+      "**/*.pytest_cache": true
   },
-  "python.formatting.provider": "none"
+  "python.linting.flake8Enabled": true,
+  "python.linting.mypyEnabled": false
 }
