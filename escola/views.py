@@ -1,9 +1,9 @@
 # from django.shortcuts import render
 from rest_framework import viewsets
 
-from escola.serializer import AlunoSerializer, CursoSerializer
+from escola.serializer import AlunoSerializer, CursoSerializer, MatriculaSerializer
 
-from .models import Aluno, Curso
+from .models import Aluno, Curso, Matricula
 
 
 class AlunosViewSet(viewsets.ModelViewSet):
@@ -16,3 +16,8 @@ class AlunosViewSet(viewsets.ModelViewSet):
 class CursosViewSet(viewsets.ModelViewSet):
     queryset = Curso.objects.all()
     serializer_class = CursoSerializer
+
+
+class MatriculaViewSet(viewsets.ModelViewSet):
+    queryset = Matricula.objects.all()
+    serializer_class = MatriculaSerializer
