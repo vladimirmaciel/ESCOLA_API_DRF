@@ -3,6 +3,8 @@ disable=
       C0114, # Missing-module-docstring
       C0115, # Missing-class-docstring
       C0116, # Missing-function-docstring
+      R0901, #too-many-ancestors
+      E1101, #no-member 
 
 # Analyse import fallback blocks. This can be used to support both Python 2 and
 # 3 compatible code, which means that the block might have code that exists
