@@ -22,6 +22,8 @@ class MatriculaSerializer(serializers.ModelSerializer):
 
 
 class ListaMatriculaAlunoSerializer(serializers.ModelSerializer):
+    """Relacionando curso descricao"""
+
     curso = serializers.ReadOnlyField(source="curso.descricao")
     periodo = serializers.SerializerMethodField()
 
@@ -35,6 +37,8 @@ class ListaMatriculaAlunoSerializer(serializers.ModelSerializer):
 
 
 class ListaAlunosMatriculadosSerializer(serializers.ModelSerializer):
+    """Relacionando aluno com nome"""
+
     aluno_nome = serializers.ReadOnlyField(source="aluno.nome")
 
     class Meta:
